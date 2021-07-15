@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="message-details-service"/>
+<aop-project name="eureka-server"/>
+<aop-project name="message-service"/>
+<aop-project name="api-gateway"/>
+</aop-reference-model>

@@ -1,0 +1,5 @@
+package com.sapient.message.service;
+
+public interface MessageDetailsProxy {
+
+}

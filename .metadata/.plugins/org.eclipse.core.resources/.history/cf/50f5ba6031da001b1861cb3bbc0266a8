@@ -1,0 +1,13 @@
+package com.sapient.messagedetailsservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MessageDetailsServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MessageDetailsServiceApplication.class, args);
+	}
+
+}
