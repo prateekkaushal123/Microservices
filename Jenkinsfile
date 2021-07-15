@@ -21,18 +21,18 @@ pipeline {
                 // Run Maven on a Unix agent.
                 bat "cd api-gateway"
                 echo "inside api-gateway"
-                bat "start mvn clean install"
+                bat "mvn clean install"
                 
                 bat "cd ../eureka-server"
                 echo "inside eureka-server"
-                bat "start mvn clean install"
+                bat "mvn clean install"
                 
                 bat "cd ../message-details-service"
                 echo "inside Message details service"
-                bat "start mvn clean install"
+                bat "mvn clean install"
                 bat "cd ../message-service"
                 echo "inside Message service"
-                bat "start mvn clean install"
+                bat "mvn clean install"
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
