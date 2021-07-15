@@ -19,20 +19,20 @@ pipeline {
                 git branch: 'master' , url: 'https://github.com/aarsh2211/Microservices'
 
                 // Run Maven on a Unix agent.
-                bat "cd api-gateway"
+                sh "cd api-gateway"
                 echo "inside api-gateway"
-                bat "mvn clean install"
+                sh "mvn clean install"
                 
-                bat "cd ../eureka-server"
+                sh "cd ../eureka-server"
                 echo "inside eureka-server"
-                bat "mvn clean install"
+                sh "mvn clean install"
                 
-                bat "cd ../message-details-service"
+                sh "cd ../message-details-service"
                 echo "inside Message details service"
-                bat "mvn clean install"
-                bat "cd ../message-service"
+                sh "mvn clean install"
+                sh "cd ../message-service"
                 echo "inside Message service"
-                bat "mvn clean install"
+                sh "mvn clean install"
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
